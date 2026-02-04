@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #fff;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+h3 {
+    margin-bottom: 1rem;
+    color: #ffd369;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.line-one,
+.line-2 {
+    display: flex;
+}
+
+.btn {
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    margin: 1.2rem;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
+.red {
+    background: radial-gradient(circle, #ff5f5f, #8b0000);
+}
+
+.yellow {
+    background: radial-gradient(circle, #fff176, #b59f00);
+}
+
+.green {
+    background: radial-gradient(circle, #66ff99, #006400);
+}
+
+.purple {
+    background: radial-gradient(circle, #d36bff, #4b0082);
+}
+
+.flash {
+    background-color: #fff !important;
+    box-shadow: 0 0 40px white;
+}
+
+.userflash {
+    background-color: #000 !important;
+    box-shadow: 0 0 40px #000;
+}
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .container {
+        margin-top: 1.5rem;
+    }
+
+    .btn {
+        height: 130px;
+        width: 130px;
+        margin: 0.7rem;
+        border-radius: 18%;
+    }
+}
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 0.9rem;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        height: 110px;
+        width: 110px;
+        margin: 0.6rem;
+        border-radius: 15%;
+    }
+}
+@media (max-height: 500px) and (orientation: landscape) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .btn {
+        height: 100px;
+        width: 100px;
+        margin: 0.5rem;
+    }
+}
