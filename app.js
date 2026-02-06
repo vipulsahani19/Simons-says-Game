@@ -6,7 +6,7 @@ let h3=document.querySelector("h3");
 let start=false;
 let level=0;
 let h2=document.querySelector("h2");
-document.addEventListener("keypress",function(){
+document.addEventListener("click",function(){
     if(start==false){
         console.log("Game Started");
         start=true;
@@ -70,4 +70,5 @@ function reset(){
     level=0;
     gameseq=[];
     userseq=[];    
+
 }
