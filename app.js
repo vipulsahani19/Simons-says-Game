@@ -6,7 +6,8 @@ let h3=document.querySelector("h3");
 let start=false;
 let level=0;
 let h2=document.querySelector("h2");
-document.addEventListener("keyboard",function(){
+let stbtn=document.getElementById("start");
+stbtn.addEventListener("click",function(){
     if(start==false){
         console.log("Game Started");
         start=true;
@@ -18,7 +19,7 @@ function levelup(){
     level++;
     h2.innerText= `Level ${level}`;
 
-    let randIdx=Math.floor(Math.random()*3);
+    let randIdx=Math.floor(Math.random()*4  );
     let randcolor=btns[randIdx];
     let randbtn=document.querySelector(`.${randcolor}`);
     gameseq.push(randcolor);
@@ -70,6 +71,4 @@ function reset(){
     level=0;
     gameseq=[];
     userseq=[];    
-
 }
-
